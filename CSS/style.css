@@ -15,7 +15,9 @@
    ---accent-color: #2196F3;
    --color-blue-text: rgba(33, 150, 243, 1);
    --background-white: #fff;
-   --backgroung-button-grey:  #F5F4FA;
+   --background-button-grey:  #F5F4FA;
+   --background-dark-color: #2F303A;
+   --footer-background: rgba(47, 48, 58, 1);
 }
 
 body {
@@ -30,65 +32,67 @@ body {
     list-style: none;
 }
 .logo-link {
-    font-family: inherit;
+    text-decoration: none;
     color: var(--color-blue-text);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .logo-dark {
-    font-family: inherit;
+    text-decoration: none;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .header-link{
-    font-family: inherit;
+    text-decoration: none;
     color:var(--title-text-color);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
 } 
-.header-link:focus {
-    color: var(---accent-color);
-    
-}
-.header-link:hover {
-    color: var(---accent-color);
-}
+.header-link:focus,
+.header-link:hover,
 .current {
     color: var(--color-blue-text);
 }
 
 .mailto {
-    color: var(--color-blue-text);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-}
-.telefon {
-    font-family: inherit;
+    text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
 }
-.main {
-    background-color: #2F303A;
+.telefon {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.section-about {
+    background-color: var(--background-dark-color);
 }
 .about {
-    font-family: inherit;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     color: var(--title-text-white);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .about-button{
-    font-family: inherit;
     color: var(--title-text-white);
     background-color: var(---accent-color);
     font-weight: 700;
@@ -97,67 +101,75 @@ body {
     border: var(--color-blue-text);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 .section-title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
     color: var(--title-text-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .section-text {
-    font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-color);
+    letter-spacing: 0.03em;
     }
 
 .what-work {
-    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     color: var(--title-text-color);
+    text-align: center;
+    letter-spacing: 0.03em;
 }
-
+.team {
+background: var(--background-button-grey);
+}
 .ourteam {
-    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     color: var(--title-text-color);
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .title {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: var(--title-text-color);
+    letter-spacing: 0.03em;
 }
 .text {
-    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     color: var(--primary-text-color);
+    letter-spacing: 0.03em;
 }
 .footer {
-    font-family: inherit;
-    background-color: rgba(47, 48, 58, 1);
+    background-color: var(--footer-background);
 }
 
 .footer-logo {
-    font-family: inherit;
+    text-decoration: none;
     color: var(--color-blue-text);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
 }
 .footer-dark {
-    font-family: inherit;
+    text-decoration: none;
     color: var(--title-text-white);
     font-weight: 700;
     font-size: 26px;
@@ -166,25 +178,29 @@ body {
 .contacts-items {
 }
 .footer-adress {
-    font-family: inherit;
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--title-text-white);
+    letter-spacing: 0.03em;
+    cursor: none;
 }
 .footer-mailto {
-    font-family: inherit;
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-color-for-adress);
+    letter-spacing: 0.03em;
 }
 .footer-telefon {
-    font-family: inherit;
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-color-for-adress);
+    letter-spacing: 0.03em;
 }
 
 /*Стили для portfolio*/
@@ -195,7 +211,6 @@ body {
 .link {
 }
 .button-all {
-    font-family: inherit;
     color: var(--title-text-white);
     background-color: var(---accent-color); 
     border: var(---accent-color);
@@ -207,9 +222,8 @@ body {
     border-radius: 4px;
 }
 .button-website {
-    font-family: inherit;
     background-color: var(--backgroung-button-grey); 
-    border: var(--backgroung-button-grey);
+    border: var(--background-button-grey);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -217,9 +231,8 @@ body {
     letter-spacing: 0.03em;
 }
 .button-application {
-    font-family: inherit;
-    background-color: --backgroung-button-grey; 
-    border: var(--backgroung-button-grey);
+    background-color: --background-button-grey; 
+    border: var(--background-button-grey);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -227,9 +240,8 @@ body {
     letter-spacing: 0.03em;
 }
 .button-design {
-    font-family: inherit;
-    background-color:var --backgroung-button-grey; 
-    border: var(--backgroung-button-grey);
+    background-color:var --background-button-grey; 
+    border: var(--background-button-grey);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -237,9 +249,8 @@ body {
     letter-spacing: 0.03em;
     }
 .button-marketing {
-    font-family: inherit;
-    background-color: --backgroung-button-grey; 
-    border: var(--backgroung-button-grey);
+    background-color: --background-button-grey; 
+    border: var(--background-button-grey);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -247,18 +258,16 @@ body {
     letter-spacing: 0.03em;
 }
 .description {
-    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.3;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 .path {
-    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
