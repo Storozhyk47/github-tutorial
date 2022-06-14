@@ -28,10 +28,12 @@ body {
 .link {
     list-style: none;
 }
+/*<-----------------HEADER------------------->*/
 .site-nav {
     list-style: none;
 }
 .logo-link {
+    font-family: Raleway;
     text-decoration: none;
     color: var(--color-blue-text);
     font-weight: 700;
@@ -41,6 +43,7 @@ body {
 }
 
 .logo-dark {
+    font-family: Raleway;
     text-decoration: none;
     color: var(--title-text-color);
     font-weight: 700;
@@ -49,7 +52,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-.header-link{
+.header-link {
     text-decoration: none;
     color:var(--title-text-color);
     font-style: normal;
@@ -64,7 +67,7 @@ body {
     color: var(--color-blue-text);
 }
 
-.mailto {
+.adress-mailto {
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -72,7 +75,11 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
-.telefon {
+.adress-mailto:focus,
+.adress-mailto:hover {
+    color: var(--color-blue-text);
+}
+.adress-telefon {
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -80,8 +87,15 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
+.adress-telefon:focus,
+.adress-telefon:hover {
+    color: var(--color-blue-text);
+}
+/* <------------------ MAIN--------------->*/
 .section-about {
     background-color: var(--background-dark-color);
+    padding-bottom: 50px;
+    Width: 1600px;
 }
 .about {
     font-weight: 900;
@@ -91,8 +105,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
 }
-.about-button{
+.button,
+.about-button {
     color: var(--title-text-white);
     background-color: var(---accent-color);
     font-weight: 700;
@@ -106,6 +122,13 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
 }
+  .about-button:hover,
+  .about-button:focus {
+    color: var(--background-white);
+    background: var(---accent-color);
+    text-decoration-line: none;
+    text-decoration-color: var(---accent-color);
+  }
 
 .section-title {
     font-weight: 700;
@@ -142,13 +165,24 @@ background: var(--background-button-grey);
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+.ourteam-1,
+.ourteam-2,
+.ourteam-3,
+.ourteam-4 {
+    background: var(--background-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    }
 .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: var(--title-text-color);
     letter-spacing: 0.03em;
+    text-align: center;
 }
 .text {
     font-weight: 400;
@@ -156,12 +190,17 @@ background: var(--background-button-grey);
     line-height: 1.2;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
+    text-align: center;
 }
+/* <----------------FOOTER-------------->*/
 .footer {
     background-color: var(--footer-background);
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
 }
 
 .footer-logo {
+    font-family: Raleway;
     text-decoration: none;
     color: var(--color-blue-text);
     font-weight: 700;
@@ -169,6 +208,7 @@ background: var(--background-button-grey);
     line-height: 1.2;
 }
 .footer-dark {
+    font-family: Raleway;
     text-decoration: none;
     color: var(--title-text-white);
     font-weight: 700;
@@ -178,6 +218,7 @@ background: var(--background-button-grey);
 .contacts-items {
 }
 .footer-adress {
+    font-style: normal;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -186,15 +227,25 @@ background: var(--background-button-grey);
     letter-spacing: 0.03em;
     cursor: none;
 }
+.footer-adress:focus,
+.footer-adress:hover {
+    color: var(--color-blue-text);
+}
 .footer-mailto {
+    font-style: normal;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-color-for-adress);
     letter-spacing: 0.03em;
+}
+.footer-mailto:focus,
+.footer-mailto:hover {
+    color: var(--color-blue-text);
 }
 .footer-telefon {
+    font-style: normal;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -202,61 +253,40 @@ background: var(--background-button-grey);
     color: var(--primary-text-color-for-adress);
     letter-spacing: 0.03em;
 }
-
-/*Стили для portfolio*/
-.section-portfolio {
+.footer-telefon:focus,
+.footer-telefon:hover {
+    color: var(--color-blue-text);
 }
-.list-button {
-}
-.link {
-}
-.button-all {
-    color: var(--title-text-white);
-    background-color: var(---accent-color); 
-    border: var(---accent-color);
+/*<----------------Стили для PORTFOLIO------------------->*/
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--title-text-color);
+    background: var(--background-button-grey);
     border-radius: 4px;
+    cursor: pointer;
+    text-decoration-line: none;
+    border:var(--primary-text-color-for-adress);
+  }
+  .portfolio-btn:hover,
+  .portfolio-btn:focus {
+    color: var(--background-white);
+    background: var(---accent-color);
+    text-decoration-line: none;
+    text-decoration-color: var(---accent-color);
+  }
+  .current-all {
+    color: var(--background-white);
+    background-color: var(---accent-color);
 }
-.button-website {
-    background-color: var(--backgroung-button-grey); 
-    border: var(--background-button-grey);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
+.gallery-items {
+    background: var(--background-white);  
 }
-.button-application {
-    background-color: --background-button-grey; 
-    border: var(--background-button-grey);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.button-design {
-    background-color:var --background-button-grey; 
-    border: var(--background-button-grey);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-    }
-.button-marketing {
-    background-color: --background-button-grey; 
-    border: var(--background-button-grey);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+
 .description {
     font-weight: 700;
     font-size: 18px;
@@ -264,7 +294,7 @@ background: var(--background-button-grey);
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
-.path {
+.describe {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
